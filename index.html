@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financer.P</title>
+    <link rel="stylesheet" href="css/estilizacao.css">
+</head>
+<body>
+    <div id="p1">
+
+    <h1>Financer.P</h1>
+
+    <div id="intersalario">
+        <h3>Seu salário</h3>
+        <input id="salario" type="text" placeholder="Digite o valor do seu salário" required> 
+        <input id="cadsalario" type="button" value="Inserir salário">
+    </div>
+
+    <div id="registro">
+        <h3>Registro de despesas</h3>
+        <p>
+            Despesa: <input id="nome" type="text" placeholder="Digite o nome da despesa" required><br>
+            Vencimento: <input id="data" type="text" placeholder="Digite a data de vencimento" required><br>
+            Valor: <input id="valor" type="text" placeholder="Digite o valor da despesa"required><br> 
+            <button id="btnCadastrar">Cadastrar</button>
+        </p>
+    </div>
+    <h3>Lista de despesas</h3>
+    <table id="tabeladespesas">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="resumo"></div>
+        <h3>Resumo Financeiro</h3>
+        <table>
+            <tr>
+                <td>Salário:</td>               <td id="resumoSalario"></td>
+            </tr>
+            <tr>
+                <td>Total de despesas:</td>     <td id="resumoDespesas"></td>
+            </tr>
+            <tr>
+                <td><b>Saldo final:</b></td>    <td id="resumoSaldo"></td>
+            </tr>
+        </table>          
+        <input id="apagar" type="button" value="Apagar tudo">
+
+    </div>
+
+</div>
+    <script type="text/javascript" src="js/cod.js"></script>
+</body>
+</html>
+<!-- 
+ Pai 1 = body
+ filho 1 = intersalario
+ filho 2 = registro 
+ O que deve ser feito, quando clicar o botão Cadastrar ele deve fazer a listagem das despesas na tela, exibir uma lista com as despesas(nome, data, valor).
+ Colocar numa tabela a lista.
+ Botão resumo financeiro(algo solicitavél pelo usuário), vai apresentar uma tabela com salário, total de despesas e o saldo final.
+o    O salário
+o    O total de despesas;
+o    O saldo final. 
+
+-->
